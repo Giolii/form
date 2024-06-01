@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  div{
+    font-family: "Bebas Neue", sans-serif;
+    border: 1px solid pink
+  }
+   body{
+    display: flex;
+    box-sizing: border-box;
+    }
+   div.half-left{
+    background: no-repeat center/150% url("ocean.jpg");
+    width: 40%;
+    height: 100vh;
+   }
+   div.half-right{
+    width: 60%;
+    height: 100vh;
+   }
+   .container-logo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20vh;
+    max-height: 25vh;
+   }
+   .logo{
+    background-color: rgba(207, 255, 243, 0.4);
+    width: 100%;
+    object-fit:cover ;
+   }
+   .text-logo{
+    background-color: rgba(207, 255, 243, 0.4);
+    font-size: 3em;
+    color: rgb(0, 66, 86);
+    text-align: center;
+    width: 100%;
+    bottom: 4rem;
+    text-shadow: rgb(29, 195, 255) 1px 0 10px;;
+   }
+
+   h1{
+    text-align: center;
+   }
+   h4{
+    padding: 0 2rem 0  2rem;
+   }
