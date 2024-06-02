@@ -33,7 +33,10 @@
     display: flex;
     margin: 0;
     padding: 0;
-    text-shadow: rgb(25, 0, 255) 1px 0px 10px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background: url(https://media.newyorker.com/photos/5dbafcc91b4a6700085a7a9b/master/pass/Baker-FightClub.jpg);
   }
 
   div{
@@ -44,13 +47,17 @@
     background: url("ocean.jpg") no-repeat center center / cover;
     width: 30vw;
     height: 100vh;
+    position: fixed;
    }
    div.half-right{
-    background: url(https://media.newyorker.com/photos/5dbafcc91b4a6700085a7a9b/master/pass/Baker-FightClub.jpg) no-repeat left center / cover;
+
     width: 70vw;
     color: #ffffff;
     height: 100vh;
-   }
+    margin-left: 30vw;
+    min-height: 100%;
+
+  }
    .container-logo{
     height: 300px ;
     margin-top: 200px;
