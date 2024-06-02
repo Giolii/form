@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+:root {
+    box-sizing: border-box;
+    --width-input-border: 2px;
+    --radius-inputs: 0.25em;
+    --padding-inputs: 0.75em;
+    --opacity-input-disabled: 0.5;
+    --width-inputs: 250px;
+  --width-textarea: 450px;
+  --height-textarea: 250px;
+  --co-body-accent: #07c;
+  --co-textfld-bg: #ffffff;
+  --co-textfld-border: #333;
+  --co-textfld-active-border: #444;
+  --co-textfld-focus-border: var(--co-body-accent);
+  --margin-label: 0.5em;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -15,7 +38,7 @@
     box-sizing: border-box;
     }
    div.half-left{
-    background: no-repeat center/150% url("ocean.jpg");
+    background: no-repeat center url("ocean.jpg");
     width: 40%;
     height: 100vh;
    }
@@ -26,22 +49,24 @@
    .container-logo{
     display: flex;
     flex-direction: row;
-    margin-top: 20vh;
-    max-height: 25vh;
+    margin-top: 10rem;
+    max-height: 100%;
+    align-items: center;
+    justify-content: center;
    }
    .logo{
-    background-color: rgba(207, 255, 243, 0.4);
+    background-color: rgba(207, 255, 243, 0.6);
     width: 100%;
-    object-fit:cover ;
+    max-height: 100%;
+    /* object-fit:cover ; */
    }
    .text-logo{
-    background-color: rgba(207, 255, 243, 0.4);
+    background-color: rgba(207, 255, 243, 0.6);
     font-size: 3em;
-    color: rgb(0, 66, 86);
+    color: rgba(0, 66, 86,0.3);
     text-align: center;
     width: 100%;
     bottom: 4rem;
-    text-shadow: rgb(29, 195, 255) 1px 0 10px;;
    }
 
    h1{
@@ -49,4 +74,83 @@
    }
    h4{
     padding: 0 2rem 0  2rem;
+    text-align: center;
    }
+   .section-top{
+    height: 40vh;
+   }
+   .section-mid{
+    height: 60vh;
+
+   }
+
+      button.submit-form{
+        background-color: #407dc8;
+        border: none;
+        color: rgb(255, 255, 255);
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 20px;
+
+
+        
+      }
+
+      input {
+        padding: var(--padding-inputs);
+        border: var(--width-input-border) solid;
+        border-radius: var(--radius-inputs);
+        width: var(--width-inputs);
+        max-width: 100%;
+        accent-color: var(--co-body-accent);
+        border: var(--width-input-border) solid var(--co-textfld-border);
+        background-color: var(--co-textfld-bg);
+        &:focus {
+          outline: 0;
+      }
+    &:hover,
+    &:active {
+    border-color: var(--co-textfld-active-border);
+    }
+    &:focus {
+    border-color: var(--co-textfld-focus-border);
+    }
+    }
+
+    
+    :read-only { 
+        cursor: default 
+    }
+    :disabled {
+    opacity: var(--opacity-input-disabled);
+    cursor: not-allowed;
+    }
+
+    label {
+        cursor: pointer;
+        display: block;
+      
+        & + &,
+        & + input,
+        & + select,
+        & + button,
+        & + textarea {
+          margin-top: var(--margin-label);
+        }
+      }
+      div.box-form{
+        display: flex;
+         align-items: center; 
+        justify-content: center; 
+        gap: 5rem;
+       
+      }
+
+      .submit-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+      }

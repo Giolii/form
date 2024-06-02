@@ -10,12 +10,48 @@
     <div class="half-left">
         <div class="container-logo">
             <img class="logo" src="surf logo.png" alt="A surfboard logo"></div>
-            <div class="text-logo">SURF</div>
+            <div class="text-logo">The odin project</div>
     </div>
     <div class="half-right">
-        <form action="" method="post">
+        <div class="section-top">            
             <h1>Welcome to Fight Club</h1>
-            <h4>The first rule of Fight Club is: you do not talk about Fight Club.</h4> <h4>The second rule of Fight Club is: you DO NOT talk about Fight Club! <h4>Third rule of Fight Club: if someone yells “stop!”, goes limp, or taps out, the fight is over. <h4>Fourth rule: only two guys to a fight. </h4>
+            <h4>The first rule of Fight Club is: you do not talk about Fight Club.</h4> 
+            <h4>The second rule of Fight Club is: you DO NOT talk about Fight Club! 
+            <h4>Third rule of Fight Club: if someone yells “stop!”, goes limp, or taps out, the fight is over. 
+            <h4>Fourth rule: only two guys to a fight. </h4>
+       </div>
+       <div class="section-mid">
+        <form action="https://httpbin.org/post" method="post">
+            <div class="box-form">
+            <div>
+                <label for="first_name">First Name</label>
+                <input type="text" placeholder="Your first name" id="first_name" name="first_name">
+               
+                <label for="phone_number">Phone number</label>
+                <input type="tel" placeholder="123-456-7890" id="phone_number" name="phone_number"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12">
+
+                <label for="user_password">Password:</label>
+                <input type="password" id="user_password" name="password">
+            </div>
+
+        
+
+            <div>
+                <label for="last_name">Last Name</label>
+                <input type="text" placeholder="Your last name" id="last-name" name="last-name">
+                
+                <label for="email">Email</label>
+                <input type="email" placeholder="Your email" id="email" name="email">
+
+               
+             
+                <label for="repeat_password">Repeat Password:</label>
+                <input type="password" id="repeat_password" name="repeat_password">
+            </div>
+        </div>
+            <div class="submit-container"><button class="submit-form" type="submit">Submit</button></div>
+            
         </form>
     </div>
 </body>
