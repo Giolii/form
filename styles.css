@@ -42,21 +42,22 @@
   div{
     font-family: "Bebas Neue", sans-serif;
   }
+
    div.half-left{
     background: url("ocean.jpg") no-repeat center center / cover;
     width: 30vw;
     height: 100vh;
     position: fixed;
    }
-   div.half-right{
 
+   div.half-right{
     width: 70vw;
     color: #ffffff;
     height: 100vh;
     margin-left: 30vw;
     min-height: 100%;
-
   }
+
    .container-logo{
     height: 300px ;
     margin-top: 200px;
@@ -67,6 +68,7 @@
     justify-content: center;
     position: relative;
    }
+
    .logo{
 object-fit: cover;
 display: block;
@@ -78,6 +80,7 @@ padding: 20px;
 position: absolute;
 bottom: 0;
    }
+
    .text-logo{
     font-size: 3em;
     color: rgba(255, 255, 255, 0.3);
@@ -86,8 +89,6 @@ bottom: 0;
     width: 100%;
     position: absolute;
     bottom: 20px;
-    
-
    }
 
    h1{
@@ -166,4 +167,19 @@ font-size: 2rem;
       }
       .submit-form{
         font-size:1.5rem ;
+      }
+
+      @media screen and (max-width : 480px) {
+      .text-logo{
+        font-size: 2rem;
+      }
+      .logo{
+        max-width: 250px;
+        max-height: 250px;
+        bottom: 25px;
+      }
+      .container-logo{
+        height: 220px;
+      }
+      
       }
