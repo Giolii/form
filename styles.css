@@ -15,6 +15,7 @@
   --co-textfld-active-border: #444;
   --co-textfld-focus-border: var(--co-body-accent);
   --margin-label: 0.5em;
+  --background-logo:rgba(207, 255, 243, 0.6);
   }
   
   *,
@@ -28,59 +29,75 @@
     font-weight: 400;
     font-style: normal;
   }
+  body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-shadow: rgb(25, 0, 255) 1px 0px 10px;
+  }
 
   div{
     font-family: "Bebas Neue", sans-serif;
     border: 1px solid pink
   }
-   body{
-    display: flex;
-    box-sizing: border-box;
-    }
    div.half-left{
-    background: no-repeat center url("ocean.jpg");
-    width: 40%;
+    background: url("ocean.jpg") no-repeat center center / cover;
+    width: 30vw;
     height: 100vh;
    }
    div.half-right{
-    width: 60%;
+    background: url(https://media.newyorker.com/photos/5dbafcc91b4a6700085a7a9b/master/pass/Baker-FightClub.jpg) no-repeat left center / cover;
+    width: 70vw;
+    color: #ffffff;
     height: 100vh;
    }
    .container-logo{
+    height: 300px ;
+    margin-top: 200px;
+    border: 1px solid red;
+    background-color: var(--background-logo);
     display: flex;
-    flex-direction: row;
-    margin-top: 10rem;
-    max-height: 100%;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
    }
    .logo{
-    background-color: rgba(207, 255, 243, 0.6);
-    width: 100%;
-    max-height: 100%;
-    /* object-fit:cover ; */
+object-fit: cover;
+display: block;
+width: auto;
+height: auto;  
+max-width:400px ;
+max-height:500px ;
+padding: 20px;
+position: absolute;
+bottom: 0;
    }
    .text-logo{
-    background-color: rgba(207, 255, 243, 0.6);
     font-size: 3em;
-    color: rgba(0, 66, 86,0.3);
+    color: rgba(255, 255, 255, 0.3);
+    text-shadow: #0d8eff 1px 0 10px;
     text-align: center;
     width: 100%;
-    bottom: 4rem;
+    position: absolute;
+    bottom: 20px;
+    
+
    }
 
    h1{
     text-align: center;
+    font-size: 4rem;
    }
    h4{
     padding: 0 2rem 0  2rem;
     text-align: center;
+    font-size: 2rem;
    }
    .section-top{
-    height: 40vh;
+
    }
    .section-mid{
-    height: 60vh;
 
    }
 
@@ -119,32 +136,19 @@
     }
     }
 
-    
-    :read-only { 
-        cursor: default 
-    }
-    :disabled {
-    opacity: var(--opacity-input-disabled);
-    cursor: not-allowed;
-    }
 
     label {
         cursor: pointer;
         display: block;
-      
-        & + &,
-        & + input,
-        & + select,
-        & + button,
-        & + textarea {
-          margin-top: var(--margin-label);
-        }
       }
+      
       div.box-form{
         display: flex;
          align-items: center; 
         justify-content: center; 
         gap: 5rem;
+        max-width: 60vw;
+      flex-wrap: wrap;
        
       }
 
