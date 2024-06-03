@@ -168,6 +168,20 @@ font-size: 2rem;
       .submit-form{
         font-size:1.5rem ;
       }
+      input:invalid {
+        border: 3px solid red;
+    }
+    
+    input:valid {
+        border: medium solid darkgreen;
+    }
+    input:placeholder-shown {
+        border: thin solid black;
+    }
+    /* input:focus{
+      border: 2px solid #040072;
+      box-shadow: 5px 3px 3px rgb(0, 0, 70);
+    } */
 
       @media screen and (max-width : 480px) {
       .text-logo{
@@ -181,5 +195,6 @@ font-size: 2rem;
       .container-logo{
         height: 220px;
       }
-      
+
       }
+
