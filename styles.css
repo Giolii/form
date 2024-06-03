@@ -39,7 +39,7 @@
     background: url(/fightclub.webp);
   }
 
-  div{
+  div, button{
     font-family: "Bebas Neue", sans-serif;
   }
 
@@ -92,6 +92,7 @@ bottom: 0;
    }
 
    h1{
+    margin:0;
     text-align: center;
     font-size: 4rem;
    }
@@ -118,6 +119,7 @@ font-size: 2rem;
         margin: 4px 2px;
         cursor: pointer;
         border-radius: 20px;
+        font-size: 2rem;
       }
 
       input {
@@ -129,9 +131,12 @@ font-size: 2rem;
         accent-color: var(--co-body-accent);
         border: var(--width-input-border) solid var(--co-textfld-border);
         background-color: var(--co-textfld-bg);
-        margin-bottom: 30px;
+        margin:0 0 20px;
         &:focus {
           outline: 0;
+      }
+      #repeat-password{
+        margin-bottom: 0;
       }
     &:hover,
     &:active {
@@ -150,13 +155,14 @@ font-size: 2rem;
       
       div.box-form{
         display: flex;
+        flex-direction: row;
          align-items: center; 
         justify-content: center; 
-        gap: 3rem;
-        width: 60vw;
       flex-wrap: wrap;
-      width: 100%;
+      padding-top: 20px;
+      
       background-color: rgba(54, 3, 112, 0.2);
+
 
        
       }
@@ -165,9 +171,6 @@ font-size: 2rem;
         display: flex;
         align-items: center;
         justify-content: center;
-      }
-      .submit-form{
-        font-size:1.5rem ;
       }
       input:invalid {
         border: 3px solid red;
@@ -179,10 +182,15 @@ font-size: 2rem;
     input:placeholder-shown {
         border: thin solid black;
     }
-    /* input:focus{
-      border: 2px solid #040072;
-      box-shadow: 5px 3px 3px rgb(0, 0, 70);
-    } */
+
+    .names{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+      width: 100%;
+    }
 
       @media screen and (max-width : 480px) {
       .text-logo{
@@ -203,10 +211,8 @@ font-size: 2rem;
         margin: 0 1rem  1rem 0;
         width:190px
       }
-      div.box-form{
-    margin-left:30px ;
-        gap:0;
-    }
-
+      .names{
+        gap:10px
       }
+    }
 
